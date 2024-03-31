@@ -13,3 +13,12 @@ one = df['user_id'] == 8417864
 two = df['trip_ledger_id'] == 1488838 
 df.where(one & two)
 df[(one)& (two)]
+
+###Analyzing the data
+df.describe()
+df['start_location_name'].describe()
+df['DURATION'].value_counts(normalize=True)
+
+df['end_location_name'].value_counts(dropna=False)
+
+df.isnull().sum()
