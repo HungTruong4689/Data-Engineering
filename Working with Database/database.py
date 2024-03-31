@@ -27,3 +27,17 @@ conn_string = "dbname= 'dataengineering' host='localhost' user='postgres' passwo
 conn = db.connect(conn_string)
 cur = conn.cursor()
 
+
+##Inserting data
+query = "insert to users(id,name,street,city,zip) value({},'{}','{}','{}','{}')".format(1,'Big Bird','Sesame Street', 'Fakeville','12345')
+
+## mogrigy: to see the query look like
+cur.mogrify(query)
+
+## Add mutile records in a single statement
+query2 = "insert to users(id,name,street,city,zip) value(%s,%s,%s,%s,%s)"
+data = (1,'Big Bird','Sesame Street', 'Fakeville','12345')
+cur.mogrify(query2,data)
+cur.execute(query2,data)
+##Commit to make it permanent
+conn.commit()
