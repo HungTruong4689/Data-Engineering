@@ -67,3 +67,38 @@ print(cur.mogrify(query,data_for_db[1]))
 
 cur.executemany(query,data_for_db)
 conn.commit()
+
+#Extracting data from PostgreSQL
+import psycopg2 as db
+conn_string = "dbname= 'dataengineering' host='localhost' user='postgres' password='postgres'"
+
+#Create the connection object by passing the connection string to the connect() method
+conn = db.connect(conn_string)
+cur = conn.cursor()
+
+query = "select * from users"
+cur.execute(query)
+## show out the record
+for record in cur:
+    print(record)
+
+##Alternatively ways
+cur.fetchall()
+number = 3 # add number if you want to show
+cur.fetchmany(number) 
+cur.fetchone()
+data = cur.fetchone()
+print(data[0])
+## get the rowcount
+cur.rowcount()
+
+## query a table and write it out to a CSV file using the copy_to() method
+conn = db.connect(conn_string)
+cur = conn.cursor()
+
+f = open('fromdb.csv','w')
+cur.copy_to(f, 'users',sep=',')
+f.close()
+## verify the results
+f = open('fromdb.csv','r')
+f.read()
