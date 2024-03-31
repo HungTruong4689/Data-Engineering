@@ -43,3 +43,20 @@ may= df[(df['month']=='May')]
 
 df.drop(index= may.index,inplace=True)
 
+
+
+##Creating and modifying columns
+df.columns = [x.lower() for x in df.columns]
+
+df.rename(columns={'DURATION':'duration'},inplace=True)
+
+##Commit to change permanently conn.commit()
+
+when = '2019-05-23'
+x = df[(df['start_location_name'] > when)]
+len(x)
+
+##Enriching data
+new = pd.DataFrame(df['start_location_name'].value_counts().head())
+new.reset_index(inplace=True)
+new.columns= ['address','count']
