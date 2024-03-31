@@ -1,0 +1,5 @@
+Following main topics:
+
+## Performing exploratory data analysis in Python
+## Handling common data issues using pandas
+## Cleaning data using airflow

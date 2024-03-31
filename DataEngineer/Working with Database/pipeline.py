@@ -48,3 +48,6 @@ def insertElasticsearch():
 ## coding airflow webserver
 ## airflow scheduler
 
+##Handling databases with NiFi processors
+## Extracting data from PostgreSQL
+        
