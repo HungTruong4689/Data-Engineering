@@ -22,3 +22,24 @@ df['DURATION'].value_counts(normalize=True)
 df['end_location_name'].value_counts(dropna=False)
 
 df.isnull().sum()
+
+###Handling common data issues using pandas
+df.drop(columns=['region_id'],inplace=True) #columns
+df.drop(index=[3425],inplace=True) #row
+
+df['start_location_name'][(df['start_location_name'].isnull())]
+
+df.dropna(subset=['start_location_name'],inplace=True)
+
+startstop = df[(df['start_location_name'].isnull())&(df['end_location_name'].isnull())]
+
+value = {'start_location_name': 'Start St.', 'end_location_name': 'Stop St. '}
+
+startstop.fillna(value=value)
+startstop[['start_location_name','end_location_name']]
+
+
+may= df[(df['month']=='May')]
+
+df.drop(index= may.index,inplace=True)
+
