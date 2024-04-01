@@ -1,0 +1,8 @@
+##Building Data pipeline
+
+### Creating a test and production environment
+### Building a data pipeline in production
+### Deploying a data pipeline in production
+
+1.Browser to http://localhostw/pgadmin4/1
+2. To create the databases, right-click on the databases icon and select Create | databases

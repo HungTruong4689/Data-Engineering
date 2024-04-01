@@ -1,0 +1,4 @@
+Following main topics
+
+## Building the data pipeline
+## Buidling a Kibana dashboard
