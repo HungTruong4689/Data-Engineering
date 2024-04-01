@@ -20,4 +20,22 @@ for i in range(1000):
 
 ##Building a production data pipeline
 
+### Read files from the data lake
+### Insert the files into staging
+### Validate the staging data
+### Move staging to be warehouse
+    
+## Reading the data lake
+
+### GetFile
+    ### /home/paulcrickard/datalake
+    ## regex pattern ^.*\.([jJ][sS][oO][nN]??)$
+
+##EvaluateJSONPath
+### UpdateCounter
+    
+##Querying the staging database
+    
+### ExecuteSQLRecord
+    ## Select count(*) from ${table}
 
