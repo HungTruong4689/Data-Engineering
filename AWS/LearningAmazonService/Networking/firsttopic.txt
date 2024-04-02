@@ -29,3 +29,14 @@ Some of questions they need to get answered include these
 6. Are NAT services required?
 7. Compliance rules mandate Security at the subnet level
 
+
+#### VPC Networking
+Official name EC2-VPC
+Each VPC isolated "data center" where your computer instances and various AWS services reside.
+
+Software that can run successfully on a Windows or Linux virtual serveer can be hosted on EC2 instances hosted in VPCs running as Web/application servers,databases, NAT servers or any third-party Software
+
+Order a VPC, AWS's job is securing your VPC as private isolated software data center linked to your AWS account
+
+A VPC also has multiple connectivity options, allowing you to connect your VPC to the Internet, to your own private data center, to other VPCs within your region or outside your region or to other AWs accounts holders' VPCs
+
