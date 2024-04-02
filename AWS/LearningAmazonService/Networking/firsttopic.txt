@@ -40,3 +40,8 @@ Order a VPC, AWS's job is securing your VPC as private isolated software data ce
 
 A VPC also has multiple connectivity options, allowing you to connect your VPC to the Internet, to your own private data center, to other VPCs within your region or outside your region or to other AWs accounts holders' VPCs
 
+
+#### Partnering with AWS
+Hosting your applications in the Amazon public cloud means you have implicity accepted to work with partnership with AWS in what is typically defined as a shared security model.
+ AWS: building and securing its clound infrastructure
+ yours: design acceptable security provisions for your applications and data hosted within the AWS cloud
