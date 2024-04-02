@@ -1,0 +1,31 @@
+## Networking at A AWS is called teh virtual private cloud
+
+###Goals
+1. have a strong understanding of VPCs
+2. networking services and options available
+
+- subnet is the lowest level we can gain access to, and it is at a virtual level
+
+#### Topics for this chapter include the following
+1. VPC networking
+2. Subnets and IP address types 
+- Route table
+- Security groups and NACLs
+- VPN connectivity options
+- Route 53 - the domain name system (DNS) service
+
+#### Terra Firma
+1. Management agrees that the current HR system must be migrated to AWS as soon as possible
+2. The company's HR system needs to be able to properly scale to handle the increased demand of upper Management
+3. The human resources system must be available 24
+
+
+Some of questions they need to get answered include these
+1. How many VPCs should Terra Firma consider using?
+2. How many AZs should Terra Firma use to design for failover
+3. How many subnets should Terra Firma use?
+4. Do you Web servers need public or private IP addresses?
+5. Can we privately access AWS resources from within a VPC
+6. Are NAT services required?
+7. Compliance rules mandate Security at the subnet level
+
