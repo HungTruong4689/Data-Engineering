@@ -45,3 +45,13 @@ A VPC also has multiple connectivity options, allowing you to connect your VPC t
 Hosting your applications in the Amazon public cloud means you have implicity accepted to work with partnership with AWS in what is typically defined as a shared security model.
  AWS: building and securing its clound infrastructure
  yours: design acceptable security provisions for your applications and data hosted within the AWS cloud
+
+ ### To host or to Associate
+
+ Some of these services will have relationships with the service and components hosted inside a VPC, but the services themselves are not actually installed in the VPC
+
+ They reside on the private or public Amazon network and once ordered or selected are then associated or linked to the chosen VPC carrying out their task.
+
+ The primary service hosted in the VPC is the EC2 instances.
+
+ 
