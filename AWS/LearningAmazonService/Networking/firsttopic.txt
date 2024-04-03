@@ -110,3 +110,7 @@ Secondary: the same or larger is not allowed
 
 ### The Default VPC
 The default VPC can be deleted. If you want to bring it back, AWS provides a script to recreate it. You also can't assign an existing VPC to become default VPC
+
+### Revisiting Availability Zones
+- Desing for resiliency and failover with multiple AZs in a single VPC
+- Load-balance instances hosted on subnets in different AZs
