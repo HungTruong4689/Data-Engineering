@@ -128,3 +128,11 @@ sumary:
     - public subnets are for infrastructure
     - private subnets are private with no Internet access
     - private subnets are where instances live privately
+
+### NAT services
+- ordered and linked to a public subnet to allow EC2 instances in a private subnet to connect to the Internet and receive required os 
+- always placed in a public subnet and configured with an elastic IP address 
+Sumary: 
+-   used so EC2 instances residing on private subnets can get required updated
+- hosted AWS cloud service with no need to install or maintain an EC2 instances
+- is merely and instance configured for NAT duties
