@@ -88,3 +88,9 @@ A single VPC can host many subnets and instances and have private connectivity b
 - you're an admisnistrator who has been tasked with utilizing cloud storated at AWS -> Storage, not need VPC
 - we can work with multiple VPCs and multiple accounts with VPCs but it's a reat idea to have some long-term plan perhaps 2 to 3 yeaars out if possible
 - You work for a large company that is hosted in many different countries wiht different languages. Your company wants absolute separation; multiple VPCs can be created.
+
+### Creating the VPC CIDR block
+- Both IPv4 and IPv6 subnets are supported within a VPC, however, it is required that VPCs and subnets have an initial IPv4 CIDR block defined first
+- IPv6 CIDR blocks can be associated with your VPC, but only after an initial IPv4 CIDR block has been created
+- CIDR blocks must not overlap with any existing CIDR blocks associated within a VPC or with another VPC connected with peering connection 
+- The size. of an existing CIDR block cannot be increased or decreased; it is locked after creation
