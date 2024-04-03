@@ -102,3 +102,8 @@ Using additional secondary CIDR blocks in a few pages
 
 Let's start with the example of 192.168.0.0
 for your VPC starting CIDR address, the network mask you choose will determine the number of possible hosts that can be contained on subnets within your single VPC
+
+### Adding a Secondary CIDR block
+the additional secondary CIDR block can not be larger than the initial primary CIDR block
+Primary  10.0.0.0/24
+Secondary: the same or larger is not allowed 
