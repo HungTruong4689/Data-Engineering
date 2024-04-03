@@ -114,3 +114,17 @@ The default VPC can be deleted. If you want to bring it back, AWS provides a scr
 ### Revisiting Availability Zones
 - Desing for resiliency and failover with multiple AZs in a single VPC
 - Load-balance instances hosted on subnets in different AZs
+
+### Creating Subnets
+It's usually stated that a VPC spans "all of the availability zones within its region"
+AZs don't show up automatically in each VPC 
+AZs have been designed with isolation from other AZs
+private subnet: no gateway or endpoint to direct traffic to
+public subnet: is routed to the internet through an internet gateway
+sumary:
+    - contained within an AZs
+    - host compute instances
+    - public subnets allow you access to the internet
+    - public subnets are for infrastructure
+    - private subnets are private with no Internet access
+    - private subnets are where instances live privately
