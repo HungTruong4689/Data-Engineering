@@ -107,3 +107,6 @@ for your VPC starting CIDR address, the network mask you choose will determine t
 the additional secondary CIDR block can not be larger than the initial primary CIDR block
 Primary  10.0.0.0/24
 Secondary: the same or larger is not allowed 
+
+### The Default VPC
+The default VPC can be deleted. If you want to bring it back, AWS provides a script to recreate it. You also can't assign an existing VPC to become default VPC
