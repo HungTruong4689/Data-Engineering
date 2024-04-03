@@ -94,3 +94,11 @@ A single VPC can host many subnets and instances and have private connectivity b
 - IPv6 CIDR blocks can be associated with your VPC, but only after an initial IPv4 CIDR block has been created
 - CIDR blocks must not overlap with any existing CIDR blocks associated within a VPC or with another VPC connected with peering connection 
 - The size. of an existing CIDR block cannot be increased or decreased; it is locked after creation
+
+### Planing your primary VPC CIDR block
+- Ask the networking team and get advice on what Ip address ranges you should use at AWS
+Notes: The primary IPv4 CIDR block that you choose for your VPC will determine the number and size of IPv4 addresses that can be assigned to the subnets created within the VPC.
+Using additional secondary CIDR blocks in a few pages
+
+Let's start with the example of 192.168.0.0
+for your VPC starting CIDR address, the network mask you choose will determine the number of possible hosts that can be contained on subnets within your single VPC
