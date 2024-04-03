@@ -78,3 +78,13 @@ Hosting your applications in the Amazon public cloud means you have implicity ac
  - VPC with a Private Subnet Only and Hardware VPN access
 
  ### How Many VPCs
+- 0ne region 5 VPCs
+A single VPC can host many subnets and instances and have private connectivity back to the corporate data center.
+- you are an independent developer creating an application that will be available across the Internet to users around the Internet to users around the world.
+ Eg. 3 VPC :
+    - development workspace
+    - test workspace
+    - a produciton workspace
+- you're an admisnistrator who has been tasked with utilizing cloud storated at AWS -> Storage, not need VPC
+- we can work with multiple VPCs and multiple accounts with VPCs but it's a reat idea to have some long-term plan perhaps 2 to 3 yeaars out if possible
+- You work for a large company that is hosted in many different countries wiht different languages. Your company wants absolute separation; multiple VPCs can be created.
