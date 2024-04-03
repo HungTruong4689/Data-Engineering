@@ -62,4 +62,19 @@ Hosting your applications in the Amazon public cloud means you have implicity ac
  2. the underlying physical network at AWS would be quite recognizable to the physical network
 
  - Each VPC runs on top of the physical AWS network infrastructure.
- 
+
+ ### The Mapping service
+ - is a fully distributed service in charge of mapping VPCs and their associated network interfaces and the physical locations of each VPC.
+
+ ### Creating your first VPC
+ - name tag: name of the VPC being created
+ - initial IPv4 CIDR block you want to see for the VPC
+
+ VPC with a Single Public Subnets
+ VPC with Public and Private Subnets
+ - public and private subnets allows you to create an environment for a multitier application.
+ - The public subnets would be utilized for network address translation NAT servers or additional public-facing services such as load-balancing servicesa.
+ - VPC with Public and Private Subnets and Hardware VPN access
+ - VPC with a Private Subnet Only and Hardware VPN access
+
+ ### How Many VPCs
