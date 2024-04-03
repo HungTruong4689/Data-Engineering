@@ -54,4 +54,12 @@ Hosting your applications in the Amazon public cloud means you have implicity ac
 
  The primary service hosted in the VPC is the EC2 instances.
 
+ ### What's Behind the Networking Curtain
+ Each VPC is a software-defined network built on Amazon's own code and custom network hardware developed by AWS to match its required scale of network operations.
+
+ There are two networks at AWS: 
+ 1. the real physical network that is maintained by AWS, along with physical switches and routers and familiar networking components
+ 2. the underlying physical network at AWS would be quite recognizable to the physical network
+
+ - Each VPC runs on top of the physical AWS network infrastructure.
  
