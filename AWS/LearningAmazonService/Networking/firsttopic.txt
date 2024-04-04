@@ -142,3 +142,14 @@ Sumary:
 the main route table also defines the routing for all subnets that are not explicitly associated with any other custom route table after they are created.
 
 Every subnet when it's created is automatically assigned to the main route table of a VPC. This is a protective step as the assumption is made that the main route table will only provide local routing throughout the VPC.
+
+### Custom Route Tables
+It is considered a best practice to create custom route tables for each tier in your network design.
+example: Terrra Firma is thinking of starting with a two-tire design for its human resource CRM application.
+
+Public and private subnets will be created within each AZ, with public subnets for hosting the NAT gateway service, which allows instances on the private subnets to get updates as required
+
+### Public subnet infrastructure
+ELB, NAT gateway service.
+A custom route table will be created for the public subnets by adding a route for the Internet gateway enabling public network traffic between network interfaces hosted  on the public subnets assigned with public IP addresses and teh attached Internet gateway.
+Destination is your choice
