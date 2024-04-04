@@ -153,3 +153,14 @@ Public and private subnets will be created within each AZ, with public subnets f
 ELB, NAT gateway service.
 A custom route table will be created for the public subnets by adding a route for the Internet gateway enabling public network traffic between network interfaces hosted  on the public subnets assigned with public IP addresses and teh attached Internet gateway.
 Destination is your choice
+
+### Application and database tiers
+The application servers will be hosted on private subnets within each AZ. The master and slave database instances will be either a custom implementation or managed by the relational database service( RDS)
+
+
+### Route Table Summary
+Configure the main route table for local routing
+COnfigure custom routes for public subnets
+Configure custom routes for private subnets
+
+
