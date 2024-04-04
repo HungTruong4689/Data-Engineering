@@ -136,3 +136,9 @@ Sumary:
 -   used so EC2 instances residing on private subnets can get required updated
 - hosted AWS cloud service with no need to install or maintain an EC2 instances
 - is merely and instance configured for NAT duties
+
+
+### Working with Route Tables
+the main route table also defines the routing for all subnets that are not explicitly associated with any other custom route table after they are created.
+
+Every subnet when it's created is automatically assigned to the main route table of a VPC. This is a protective step as the assumption is made that the main route table will only provide local routing throughout the VPC.
